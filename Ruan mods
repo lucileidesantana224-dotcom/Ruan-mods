@@ -1,88 +1,106 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loja de Itens</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loja de Hacks e Ferramentas</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
       font-family: Arial, sans-serif;
-      color: white;
+      background-color: #121212;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
       text-align: center;
-      background: url('sua-imagem.jpg') no-repeat center center fixed;
-      background-size: cover;
     }
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      min-height: 100vh;
-      padding: 30px;
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #00ff88;
     }
-    h1 {
-      font-size: 2.2em;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 5px black;
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ff88;
     }
-    ul {
-      list-style: none;
-      margin: 20px auto;
-      max-width: 500px;
-      text-align: left;
+
+    .item {
+      border-bottom: 1px solid #444;
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
     }
-    ul li {
-      background: rgba(255,255,255,0.1);
-      padding: 12px;
-      margin: 8px 0;
-      border-radius: 8px;
-      font-size: 1.1em;
+
+    .item:last-child {
+      border-bottom: none;
     }
-    .link-box {
-      margin-top: 30px;
-      font-size: 1.2em;
+
+    .discord-section {
+      text-align: center;
+      margin-top: 40px;
     }
-    .link-box a {
+
+    .discord-section p {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #00ff88;
+    }
+
+    .discord-link {
       display: inline-block;
-      margin-top: 10px;
-      padding: 12px 20px;
-      background: #5865F2;
+      background-color: #5865F2;
       color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
       text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s;
+      font-weight: bold;
+      transition: background-color 0.3s;
     }
-    .link-box a:hover {
-      background: #404EED;
+
+    .discord-link:hover {
+      background-color: #4854d4;
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <h1>💥 Loja de Itens 💥</h1>
-    <ul>
-      <li>Passe mais barato: $10,00</li>
-      <li>Xit head full capa: $25,00</li>
-      <li>Aimbot Android: $27,00</li>
-      <li>Xit pra apostado: $24,00</li>
-      <li>Hs pescoço lite: $21,00</li>
-      <li>Holograma VIP: $10,00</li>
-      <li>Holograma + auxílio: $13,00</li>
-      <li>Auxíli: $10,00</li>
-      <li>FFH4X:<br>
-          - 1 dia: $7,50 <br>
-          - 7 dias: $23 <br>
-          - 15 dias: $35 <br>
-          - 30 dias: $50,90 <br>
-          - Permanente: $100
-      </li>
-    </ul>
-    <div class="link-box">
-      <p>Quer adquirir isso tudo aí é bem fácil 👇</p>
-      <a href="https://discord.gg/s79RrPthVa" target="_blank">Entrar no Discord</a>
+
+  <header>
+    <h1>Loja de Hacks & Ferramentas</h1>
+  </header>
+
+  <div class="container">
+    <div class="item"><span>Passe mais barato</span><span>$10,00</span></div>
+    <div class="item"><span>Xit head full capa</span><span>$25,00</span></div>
+    <div class="item"><span>Aimbot Android</span><span>$27,00</span></div>
+    <div class="item"><span>Xit pra apostado</span><span>$24,00</span></div>
+    <div class="item"><span>Hs pescoço lite</span><span>$21,00</span></div>
+    <div class="item"><span>Holograma VIP</span><span>$10,00</span></div>
+    <div class="item"><span>Holograma + auxílio</span><span>$13,00</span></div>
+    <div class="item"><span>Auxíli</span><span>$10,00</span></div>
+    <div class="item"><span>FFH4X - 1 dia</span><span>$7,50</span></div>
+    <div class="item"><span>FFH4X - 7 dias</span><span>$23,00</span></div>
+    <div class="item"><span>FFH4X - 15 dias</span><span>$35,00</span></div>
+    <div class="item"><span>FFH4X - 30 dias</span><span>$50,90</span></div>
+    <div class="item"><span>FFH4X - Permanente</span><span>$100,00</span></div>
+
+    <div class="discord-section">
+      <p>Quer adquirir isso tudo aí? É bem fácil, é só entrar no link 👇</p>
+      <a class="discord-link" href="https://discord.gg/s79RrPthVa" target="_blank">
+        Entrar no Discord
+      </a>
     </div>
   </div>
+
 </body>
 </html>
